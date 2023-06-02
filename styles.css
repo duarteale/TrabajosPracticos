@@ -1,7 +1,7 @@
 body{
-      max-width: 900px;
-      min-width: 900px;
-      background-color: grey;      
+      max-width: 700px;
+      min-width: 700px;
+      background-color: white;      
 }
 *{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,68 +9,73 @@ body{
       text-align: left;
       font-weight: 700;
       color: white;
-      margin: 10px;
+      margin: 8px;
       
 }
 header{
       background-color: rgb(118, 118, 251);
       padding: 20px;      
 }
-.container{
-      #display flex?
-
-}
 .nav{
       background-color:rgb(42, 45, 142);
-      margin: 3px;
+      margin: 10px;
       padding: 5px;
 }
+.container{
+      display: flex;
+}
 .navLeft{
-      width: 30%;
       background-color:rgb(84, 169, 176) ;
-      height: 400px;
-      width: 15%;
-      float:left;
+      text-align: center;
+      margin-left: 1px;
+      height: 90vh;
+      width: 20%;
 }
 main{
       background-color:darkcyan;
-      padding: 25px;
-      height: auto;
-      width: 70%;
-      display: inline-block
+      padding: 15px;      
+      height: wrap;
+      width: 50%;      
 }
 .section{
       background-color:rgb(200, 200, 204);
       color: rgb(0, 0, 0) !important;
       margin: 3px;
-      padding: 20px;
+      padding: 5px;
+      height: wrap;
 }
 .article{
-      background-color:rgb(65, 65, 65);
-      margin: 3px;
+      background-color:rgb(65, 65, 65);      
       padding: 20px;
-      width: 85%;
+      height: 10vh;
+      display:flex;
 }
 .aside{
       background-color:rgb(178, 181, 181) ;
       padding: 20px;
-      margin: 15px;
-      width: 85%;
+      height: 10vh;
+      display:flex;
 }
 .division{
       background-color:darkcyan;
-      margin: 15px;
+      text-align: center;
       padding: 5px;
-      height: 50px;
+      height: 5vh;
+      width: 100px;
+}
+.divisionGrande{
+      background-color:darkcyan;
+      text-align: center;
+      padding: 5px;
+      height: 15vh;
+      width: 80%;
 }
 .asideRight{
-      width: 30%;
       background-color:rgb(178, 181, 181) ;
-      padding: 5px;
-      height: 400px;
-      width: 15%;
-      float: right;
-      
+      text-align: center;
+      padding: 2px;
+      height: 90vh;
+      width: 20%;       
 }
 footer{
       background-color:rgb(150, 150, 247) ;
