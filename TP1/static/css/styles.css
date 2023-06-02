@@ -1,0 +1,14 @@
+* {
+    color: brown;
+}
+
+.color-row{
+    color: chartreuse;
+}
+
+.spacex {
+    margin: 0 10em;
+}
+.custom-modal-dialog {
+    width: 800px;
+  }
