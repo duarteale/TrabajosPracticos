@@ -1,0 +1,84 @@
+body{
+      max-width: 700px;
+      min-width: 700px;
+      background-color: white;      
+}
+*{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 25px;
+      text-align: left;
+      font-weight: 700;
+      color: white;
+      margin: 8px;
+      
+}
+header{
+      background-color: rgb(118, 118, 251);
+      padding: 20px;      
+}
+.nav{
+      background-color:rgb(42, 45, 142);
+      margin: 10px;
+      padding: 5px;
+}
+.container{
+      display: flex;
+}
+.navLeft{
+      background-color:rgb(84, 169, 176) ;
+      text-align: center;
+      margin-left: 1px;
+      height: 90vh;
+      width: 20%;
+}
+main{
+      background-color:darkcyan;
+      padding: 15px;      
+      height: wrap;
+      width: 50%;      
+}
+.section{
+      background-color:rgb(200, 200, 204);
+      color: rgb(0, 0, 0) !important;
+      margin: 3px;
+      padding: 5px;
+      height: wrap;
+}
+.article{
+      background-color:rgb(65, 65, 65);      
+      padding: 20px;
+      height: 10vh;
+      display:flex;
+}
+
+.aside{
+      background-color:rgb(178, 181, 181) ;
+      padding: 20px;
+      height: 10vh;
+      display:flex;
+}
+.division{
+      background-color:darkcyan;
+      text-align: center;
+      padding: 5px;
+      height: 5vh;
+      width: 100px;
+}
+.divisionGrande{
+      background-color:darkcyan;
+      text-align: center;
+      padding: 5px;
+      height: 15vh;
+      width: 80%;
+}
+.asideRight{
+      background-color:rgb(178, 181, 181) ;
+      text-align: center;
+      padding: 2px;
+      height: 90vh;
+      width: 20%;       
+}
+footer{
+      background-color:rgb(150, 150, 247) ;
+      padding: 20px;
+}
