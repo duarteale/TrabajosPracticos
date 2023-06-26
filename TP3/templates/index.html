@@ -1,34 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practico 3</title>
-</head>
-<body>
-    <h1>Lista de Tareas</h1>
-
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Título</th>
-            <th>Descripción</th>
-            <th>Acciones</th>
-        </tr>
+{% extends 'layout.html' %}
+    {% block login %}
+    <h2>Lista de Tareas</h2>
+    <table class="table table-dark table-striped">
+            <thead>
+              <tr >    
+                <th class="color-row" scope="col">Id</th>
+                <th class="color-row" scope="col">Título</th>
+                <th class="color-row" scope="col">Descripción</th>
+                <th class="color-row" scope="col">Acciones</th>
+              </tr>
+            </thead>
         {% for task in tasks %}
         <tr>
             <td>{{ task.id }}</td>
             <td>{{ task.title }}</td>
             <td>{{ task.description }}</td>
             <td>
-                <a href="/edit/{{ task.id }}">Editar</a>
+                <a href="/edit/{{ task.id }}">Editar</a>            
                 <a href="/delete/{{ task.id }}">Eliminar</a>
             </td>
         </tr>
         {% endfor %}
     </table>
+    <a href="/create"><h4>Crear nueva tarea<h4></a>
+        
+        <footer>
+            Trabajo Práctico N°3 de Alejandra Duarte
+        </footer>
 
-    <a href="/create">Crear nueva tarea</a>
-</body>
-</html>
+    {% endblock login %}
+
+    {% block noLogin %}   
+    <h1> No estoy logueado <h1>
+    {% endblock noLogin %}
+
+

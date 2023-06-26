@@ -1,0 +1,40 @@
+* {
+    color: rgb(178, 15, 207);
+}
+
+.color-row{
+    color: rgb(231, 169, 225);
+}
+
+.spacex {
+    margin: 0 10em;
+}
+
+.custom-modal-dialog {
+    width: 800px;
+  }
+
+.table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+.table-dark {
+--bs-table-striped-bg: #d1bde9;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    margin-right: 5px;
+}
+
+footer{
+    background-color:rgb(187, 72, 202) ;
+    color:white ! important;
+    padding: 5px;
+}
