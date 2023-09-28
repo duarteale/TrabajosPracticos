@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--  CSS  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <!--  JS  -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" async defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous" async defer></script>      
+      <link rel="stylesheet" href="/static/css/styles.css">
+      <title>Calculadora</title>
+</head>
+<body>
+      <div class="container">
+            <h1>Calculadora Científica</h1>
+            <div class="calculator-outer-container">                  
+                  <div class="display-container">
+                        <input type="text" id="display" class="form-control" value="0" style="text-align: right; " >            
+                  </div>
+                  <div class="buttons-container">
+                        <!-- Fila 1 -->
+                        <div class="button-row">
+                              <button id="raiz" class="btn btn-primary custom-btn" onclick="sqrt()">Sqrt</button>
+                              <button id="logaritmo" class="btn btn-primary custom-btn" onclick="log()">Log</button>
+                              <button id="seno" class="btn btn-primary custom-btn" onclick="sin()">Sin</button>
+                              <button id="coseno" class="btn btn-primary custom-btn" onclick="cos()">Cos</button>
+                              <button id="tangente" class="btn btn-primary custom-btn" onclick="tan()">Tan</button>
+                        </div>
+
+                        <!-- Fila 2 -->
+                        <div class="button-row">
+                              <button id="potencia" class="btn btn-primary custom-btn" onclick="appendToDisplay('**')">X^Y</button>
+                              <button id="parentesisA" class="btn btn-primary custom-btn" onclick="appendToDisplay('(')">(</button>
+                              <button id="parentesisB" class="btn btn-primary custom-btn" onclick="appendToDisplay(')')">)</button>
+                              <button id="exponente" class="btn btn-primary custom-btn" onclick="exponencial()">EXP</button>
+                              <button id="factorial" class="btn btn-primary custom-btn" onclick="factorial()">n!</button>
+                        </div>
+
+                        <!-- Fila 3 -->
+                        <div class="button-row">
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('7')">7</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('8')">8</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('9')">9</button>
+                              <button id="borrar" class="btn btn-danger custom-btn" onclick="clearAll()">CE</button>
+                              <button id="volver" class="btn btn-danger custom-btn" onclick="clearLastEntry()">C</button>
+                        </div>
+
+                        <!-- Fila 4 -->
+                        <div class="button-row">
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('4')">4</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('5')">5</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('6')">6</button>
+                              <button class="btn btn-primary custom-btn" onclick="appendToDisplay('*')">*</button>
+                              <button class="btn btn-primary custom-btn" onclick="appendToDisplay('/')">/</button>
+                        </div>
+
+                        <!-- Fila 5 -->
+                        <div class="button-row">
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('1')">1</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('2')">2</button>
+                              <button class="btn btn-warning custom-btn" onclick="appendToDisplay('3')">3</button>
+                              <button class="btn btn-primary custom-btn" onclick="appendToDisplay('+')">+</button>
+                              <button class="btn btn-primary custom-btn" onclick="appendToDisplay('-')">-</button>
+                        </div>
+
+                        <!-- Fila 6 -->
+                        <div class="button-row">
+                              <button id="cero" class="btn btn-secondary custom-btn" onclick="appendToDisplay('0')">0</button>
+                              <button id="punto" class="btn btn-primary custom-btn" onclick="appendToDisplay('.')">.</button>
+                              <button id="inverso" class="btn btn-primary custom-btn" onclick="appendToDisplay('*(-1)')">+/-</button>
+                              <button id="pi" class="btn btn-primary custom-btn" onclick="appendToDisplay(pi.toString())">PI</button>
+                              <button id="igual" class="btn btn-success custom-btn" onclick="calculate()">=</button>
+                        </div>
+                  </div>                
+            </div>
+      </div>
+      <script src="/scripts/script.js"></script>
+  </body>
+</html>

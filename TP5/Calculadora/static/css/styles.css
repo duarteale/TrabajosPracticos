@@ -1,0 +1,65 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Estilos para la calculadora entera*/
+  .container {
+      width: 450px;
+      background-color:  rgb(136, 134, 136);
+      padding: 40px;
+           
+  }
+h1{
+      color: whitesmoke;
+      text-align: center;
+      font-size: 30px;
+}
+
+    /* Estilos para dentro la calculadora entera*/
+  .calculator-outer-container {
+      width: auto;
+      background-color: #8d6989; 
+      border-radius: 10px;
+      padding: 20px;
+      align-items: center;
+      padding: 20px;
+  } 
+  .display-container {
+      margin-bottom: 10px;
+      width: 330px;
+  }
+  
+  .buttons-container {
+      width: 330px;
+      height: auto;
+      background-color: rgb(71, 66, 71);     
+      display: block;
+      border-radius: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+  }
+  .custom-btn {
+      width: 50px;
+      height: 50px;
+      font-size: 20px; 
+      padding: 0;
+      margin: 2px;
+      cursor: pointer;
+  }
+  .custom-btn:hover {
+      background-color: rgb(244, 204, 125); 
+      color: #fff; 
+  }
+
+  /* Estilos para las filas de botones */
+  .button-row {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin: 3px;
+      padding-top: 2px;
+      padding-left: 3px;
+  }
